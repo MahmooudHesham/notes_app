@@ -12,7 +12,7 @@ class NoteItem extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (context) {
-              return EditeNoteView();
+              return const EditeNoteView();
             },
           ),
         );
@@ -44,7 +44,7 @@ class NoteItem extends StatelessWidget {
               ),
               trailing: IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.delete, color: Colors.white, size: 30),
+                icon: const Icon(Icons.delete, color: Colors.white, size: 30),
               ),
             ),
 

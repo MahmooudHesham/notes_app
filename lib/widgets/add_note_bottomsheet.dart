@@ -7,18 +7,18 @@ class AddNoteBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 48),
+            SizedBox(height: 48),
             CutsomTextfield(hint: 'Title'),
-            const SizedBox(height: 30),
+            SizedBox(height: 30),
             CutsomTextfield(hint: 'Content', maxLines: 5),
-            const SizedBox(height: 60),
+            SizedBox(height: 60),
             CustomButton(),
-            const SizedBox(height: 50),
+            SizedBox(height: 50),
           ],
         ),
       ),
