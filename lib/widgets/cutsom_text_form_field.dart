@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/constants.dart';
 
-class CutsomTextfield extends StatelessWidget {
-  const CutsomTextfield({
+class CutsomTextFormfield extends StatelessWidget {
+  const CutsomTextFormfield({
     this.onSaved,
     super.key,
     required this.hint,

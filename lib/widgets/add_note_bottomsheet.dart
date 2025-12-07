@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_button.dart';
-import 'package:notes_app/widgets/cutsom_text_field.dart';
+import 'package:notes_app/widgets/cutsom_text_form_field.dart';
 
 class AddNoteBottomSheet extends StatelessWidget {
   const AddNoteBottomSheet({super.key});
@@ -34,14 +34,14 @@ class _AddNoteFormState extends State<AddNoteForm> {
       child: Column(
         children: [
           const SizedBox(height: 48),
-          CutsomTextfield(
+          CutsomTextFormfield(
             onSaved: (value) {
               title = value;
             },
             hint: 'Title',
           ),
           const SizedBox(height: 30),
-          CutsomTextfield(
+          CutsomTextFormfield(
             onSaved: (value) {
               content = value;
             },

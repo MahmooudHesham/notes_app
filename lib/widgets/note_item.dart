@@ -28,14 +28,14 @@ class NoteItem extends StatelessWidget {
           children: [
             ListTile(
               title: const Text(
-                "Flutter Tips",
+                "My Goals",
                 style: TextStyle(color: Colors.white, fontSize: 26),
               ),
 
               subtitle: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 child: Text(
-                  "I will became the best developer",
+                  "I will became the best developer.",
                   style: TextStyle(
                     color: Colors.white.withAlpha(150),
                     fontSize: 18,
