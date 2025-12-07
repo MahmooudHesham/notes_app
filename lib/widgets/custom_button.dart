@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/constants.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
-
+  const CustomButton({super.key, this.onPressed});
+  final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       height: 50,
       child: FilledButton(
-        onPressed: () {},
+        onPressed: onPressed,
         style: FilledButton.styleFrom(
           backgroundColor: kPrimaryColour,
           shape: RoundedRectangleBorder(
