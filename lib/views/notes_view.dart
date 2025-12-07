@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/constants.dart';
 import 'package:notes_app/widgets/add_note_bottomsheet.dart';
 import 'package:notes_app/widgets/notes_view_body.dart';
 
@@ -17,6 +18,8 @@ class NotesView extends StatelessWidget {
             },
           );
         },
+        backgroundColor: kPrimaryColour.withAlpha(200),
+        foregroundColor: Colors.black,
         child: const Icon(Icons.add),
       ),
       body: const NotesViewBody(),
