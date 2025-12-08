@@ -7,13 +7,20 @@ class CutsomTextFormfield extends StatelessWidget {
     super.key,
     required this.hint,
     this.maxLines = 1,
+    this.onChanged,
+    this.intialValue,
   });
   final String hint;
   final int maxLines;
   final void Function(String?)? onSaved;
+  final void Function(String?)? onChanged;
+  final String? intialValue;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      initialValue: intialValue,
+      onChanged: onChanged,
       onSaved: onSaved,
       validator: (value) {
         if (value?.isEmpty ?? true) {
@@ -24,6 +31,7 @@ class CutsomTextFormfield extends StatelessWidget {
       },
       cursorColor: kPrimaryColour,
       maxLines: maxLines,
+      style: const TextStyle(color: Colors.white),
       decoration: InputDecoration(
         hintText: hint,
 
