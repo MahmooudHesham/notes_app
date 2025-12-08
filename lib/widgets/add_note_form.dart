@@ -33,7 +33,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             },
             hint: 'Title',
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           CutsomTextFormfield(
             onSaved: (value) {
               content = value;
@@ -43,7 +43,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           ),
           const SizedBox(height: 20),
           const ColorsListView(),
-          const SizedBox(height: 40),
+          const SizedBox(height: 20),
 
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
